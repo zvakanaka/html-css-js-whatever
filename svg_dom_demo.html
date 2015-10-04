@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+       <meta content="utf-8" http-equiv="encoding">
+    </head>
+<body>
+<script type="text/javascript">
+/*jslint browser: true*/
+/*global console */
+function changeIt() {
+    //recognized ONLY at the beginning of a function
+    "use strict";//cause unititialized or deleted objects to throw error
+    //notice form-height is HTML and formHeight is JS (naming convention)
+    var formHeight = document.getElementById("form-height").value;
+    //set a default if not set
+    formHeight = formHeight || 300;
+    //avoid trouble if it wasn't a number
+    if (isNaN(parseFloat(formHeight))) {
+        formHeight = 300;
+    }
+    console.log('Height is ' + formHeight);//check developer console to see this
+    //set attribute height from myRectangle element to formHeight
+    document.getElementById("myRectangle").setAttribute("height", formHeight);
+    //if mySvg element's height smaller than shapes, make big to avoid cut display
+    if (document.getElementById("mySvg").getAttribute("height") < document.getElementById("myRectangle").getAttribute("height")) {
+        document.getElementById("mySvg").setAttribute("height", formHeight);
+    }
+}
+</script>
+
+<svg id="mySvg" width="400" height="100">
+  <rect id="myRectangle" width="200" height="75" style="fill:rgb(255,255,0);stroke-width:1;stroke:rgb(0,0,0)">
+  This browser is incapable of SVG 
+</svg>
+
+<input type="text" id="form-height">
+<button onclick="changeIt()">Change Height</button> 
+
+</body>
+</html>
