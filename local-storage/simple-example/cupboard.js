@@ -27,4 +27,9 @@ function resetColor() {
    //add Reset button to clear local storage
    out += '<button onclick="resetColor()">Reset Color in Local Storage</button><br/>';
     
-   document.getElementById("divy").innerHTML = out;
+document.getElementById("divy").innerHTML = out;
+
+console.log(typeof favColor);
+if (typeof localStorage.getItem("favoriteColor") !== 'undefined') {
+    document.getElementById("divy").style.background = localStorage.getItem("favoriteColor");
+} 

@@ -1,0 +1,147 @@
+.moving-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: moving-square; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: moving-square;
+    animation-duration: 4s;
+}
+
+#delayed {
+    animation-delay: 2s;
+}
+
+#counted {
+    animation-iteration-count: 2;
+}
+
+#infinite {
+      animation-iteration-count: infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moving-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes moving-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes inner-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:50px; top:0px;}
+    50%  {background-color:blue; left:50px; top:50px;}
+    75%  {background-color:green; left:0px; top:50px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes inner-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:50px; top:0px;}
+    50%  {background-color:blue; left:50px; top:50px;}
+    75%  {background-color:green; left:0px; top:50px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes inception-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:25px; top:0px;}
+    50%  {background-color:blue; left:25px; top:25px;}
+    75%  {background-color:green; left:0px; top:25px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes inception-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:25px; top:0px;}
+    50%  {background-color:blue; left:25px; top:25px;}
+    75%  {background-color:green; left:0px; top:25px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes double-inception-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:12.5px; top:0px;}
+    50%  {background-color:blue; left:12.5px; top:12.5px;}
+    75%  {background-color:green; left:0px; top:12.5px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Standard syntax */
+@keyframes double-inception-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:12.5px; top:0px;}
+    50%  {background-color:blue; left:12.5px; top:12.5px;}
+    75%  {background-color:green; left:0px; top:12.5px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.inner-div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    -webkit-animation-name: inner-square; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: inner-square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#inception-div {
+    animation-delay: 3s;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    -webkit-animation-name: inception-square; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: inception-square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#inception-div {
+    animation-delay: 5s;
+    width: 12.5px;
+    height: 12.5px;
+    background-color: red;
+    position: absolute;
+    -webkit-animation-name: double-inception-square; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: double-inception-square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+.common-div:hover {
+      width: 350px;
+      background: #ff8888;
+}
+.terminal {
+      transition-duration: 0.5s;
+      transition-property: background color;
+      transition-delay: 0s;
+}
+.terminal:hover {
+      background: black;
+      color: lime;
+}
+h1, h2, h3 {
+      padding: 3px;
+      margin: 0px;
+      font-family: "Lucida Console", monospace;
+}

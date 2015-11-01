@@ -1,0 +1,51 @@
+<!DOCTYPE html></!DOCTYPE>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" type="text/css" href="transitions.css" /> -->
+    
+  </head>
+  <body id="bodacious">
+    <div id="heading"><h1 class="h-terminal">CSS3 Transitions</h1></div>
+
+    <div id="div1" class="common-div">
+      <code>Default</code>
+    </div>
+
+    <div id="div2" class="common-div ease">
+      <code>transition-timing-function: ease</code>
+    </div>
+
+    <div id="div3" class="common-div ease-in">
+      <code>transition-timing-function: ease-in</code>
+    </div>
+
+    <div id="div4" class="common-div ease-out">
+      <code>transition-timing-function: ease-out</code>
+    </div>
+
+    <div id="div5" class="common-div linear">
+      <code>transition-timing-function: linear</code>
+    </div>
+
+    <div id="div6" class="common-div ease-in-out">
+      <code>transition-timing-function: ease-in-out</code>
+    </div>
+    <div>
+      <h2>Code</h2>
+      <pre class="terminal"><code class="">.common-div {
+	  background: #8888ff;
+	  width: 100%;
+	  height: 100px;
+	  transition-duration: 1.5s;
+	  transition-property: width background;
+	  transition-delay: 0.1s;
+	  }
+	  .common-div:hover {
+	  width: 100px;
+	  background: #ff8888;
+	  }</code></pre>
+    </div>
+    <div id="footing">
+      <a href="http://www.w3schools.com/css/css3_transitions.asp">Reference</a></div>
+  </body>
+  </html>

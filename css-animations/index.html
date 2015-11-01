@@ -1,0 +1,68 @@
+<!DOCTYPE html></!DOCTYPE>
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="animations.css" />
+  </head>
+  <body id="bodacious">
+    <div id="heading"><h1 class="h-terminal">CSS3 Animations</h1></div>
+
+    <div id="default" class="moving-div">
+      <code>Default</code>
+    </div>
+
+    <div id="delayed" class="moving-div">
+      <code>Delayed</code>
+    </div>
+
+    <div id="counted" class="moving-div">
+      <code>2 Times</code>
+    </div>
+
+      <div id="infinite" class="moving-div">
+        <div id="delayed" class="inner-div">
+          <div id="inception-div" class="inception-div">
+            <div id="double-inception-div" class="inception-div">
+            </div>  
+          </div>  
+        </div>
+        <code>Infinite</code>
+      </div>
+    <div>
+      <h2>Code</h2>
+      <pre class="terminal"><code class="">
+.moving-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: moving-square; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: moving-square;
+    animation-duration: 4s;
+}
+
+#delayed {
+    animation-delay: 2s;
+}
+
+#counted {
+    animation-iteration-count: 2;
+}
+
+#infinite {
+      animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes moving-square {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}</code></pre>
+    </div>
+    <div id="footing">
+      <a href="http://www.w3schools.com/css/css3_animations.asp">Reference</a></div>
+</body>
+</html>

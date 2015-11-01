@@ -1,0 +1,41 @@
+.common-div {
+      background: #8888ff;
+      width: 100%;
+      height: 50px;
+      transition-duration: 1.5s;
+      transition-property: width background;
+      transition-delay: 0.1s;
+}
+.common-div:hover {
+      width: 350px;
+      background: #ff8888;
+}
+.terminal {
+      transition-duration: 0.5s;
+      transition-property: background color;
+      transition-delay: 0s;
+}
+.terminal:hover {
+      background: black;
+      color: lime;
+}
+.linear {
+      transition-timing-function: linear;
+}
+.ease {
+      transition-timing-function: ease;
+}
+.ease-in {
+      transition-timing-function: ease-in;
+}
+.ease-in-out {
+      transition-timing-function: ease-in-out;
+}
+.ease-out {
+      transition-timing-function: ease-out;
+}
+h1, h2, h3 {
+      padding: 3px;
+      margin: 0px;
+      font-family: "Lucida Console", monospace;
+}
