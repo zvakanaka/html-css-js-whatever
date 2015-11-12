@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Portfolio Cit-261 | Adam Quinton</title>
+    <style>div { padding: 0px 5px;}</style>
+  </head>
+<body>
+<script src="../nav-builder.js"></script>
+
+<h2 id="page-title">JavaScript Objects</h2>
+<div id="creature-name"></div>
+
+<div id="creature-hair"></div>
+<div id="creature-body">
+  <div id="creature-eyes">
+  </div>
+  <br/>|_|_|_|_|
+</div>
+
+
+<script>
+// JS Objects example by Adam Quinton
+  var being = {firstName:"Square-bill", lastName:"Winkle", width:60, height:200, bodyColor:"red", hairColor:"tan", eyeColor:"blue", gender:"he"};
+
+  document.getElementById("creature-name").innerHTML = "This is " + being.firstName + " " + being.lastName + ", and " + being.gender + " is a JavaScript object";
+
+  document.getElementById("creature-hair").style.backgroundColor = being.hairColor;
+  document.getElementById("creature-hair").style.width = being.width;
+  document.getElementById("creature-hair").style.height = being.height/10;
+
+  document.getElementById("creature-body").style.backgroundColor = being.bodyColor;
+  document.getElementById("creature-body").style.height = being.height;
+  document.getElementById("creature-body").style.width = being.width;
+
+  document.getElementById("creature-eyes").innerHTML = "(0 ) (0 )";
+  document.getElementById("creature-eyes").style.color = being.eyeColor;
+</script>
+</body>
+</head>

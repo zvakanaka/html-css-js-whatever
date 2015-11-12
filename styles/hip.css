@@ -2,7 +2,77 @@
    by Adam Quinton
    Oct 29, 2015
 */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url(http://fonts.gstatic.com/s/ubuntucondensed/v6/DBCt-NXN57MTAFjitYxdrDAdhzWOYhqHvOZMRGaEyPo.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntucondensed/v6/DBCt-NXN57MTAFjitYxdrFzqCfRpIA3W6ypxnPISCPA.woff) format('woff');
+}
+html {
+    font-family: 'Ubuntu', monospace;
+    display: table;
+    margin: auto;
+    background-color: #1A1A1A;
+}
+body {
+    background-color: #E2D9D1;
+    width: 96%;
+    border: 1px solid grey;   
+    margin: 15px 10px;
+}
+ul {
+    background-color: #C2C9C1;
+}
+article {
+    width: 100%;
+    /*line-height: 170%;*/
+    padding: 25px 0px;   
+    overflow: auto;
+}
+
+/* 
+ * links 
+ */
+.nav-li {
+	-webkit-margin-before: 0px !important;
+ }
 
 ul.nav-ul li {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221);
+    background-color: #3F91DD;
     display: inline;
+    font-size: 1em;
+    margin: 0px 2px;
+    padding: 4px 8px;
+}
+ul.nav-ul li a:hover {
+	/*background-color: lightgreen;*/
+	/*color: black !important;*/
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+    text-decoration: none;
+}
+/* unvisited link */
+ul.nav-ul li a:link {
+    color: silver;
+    text-decoration: none;
+}
+/* visited link */
+ul.nav-ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: teal;   
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+#heading {
 }
