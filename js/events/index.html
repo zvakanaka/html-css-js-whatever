@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Portfolio Cit-261 | Adam Quinton</title>
+  </head>
+<body>
+<script src="../../nav-builder.js"></script>
+
+<h2 id="page-title">JavaScript Events</h2>
+<article>
+<div id="perfectly-normal-div">
+  <button style="display: none;" class="clickable" onclick="laughter()">Call a Method</button>
+
+  <button class="clickable" id="broke-the-law" onclick="breakLaw(this)">Click Me</button>
+</div>
+</article>
+
+
+<script>
+// JS Events example by Adam Quinton
+//Level 1
+function laughter() {
+  var audio = new Audio('haha.wav');
+  audio.play();
+  document.getElementsByClassName("clickable")[0].onclick =  hideFirst;
+}
+//Level 2
+function breakLaw(id) {
+   id.innerHTML = "No More";
+   id.onclick = noMore;
+}
+//Level 3
+function noMore() {
+  //set laughter button to visible
+  document.getElementsByClassName("clickable")[0].style.display = 'block';
+  document.getElementsByClassName("clickable")[0].innerHTML = "Do NOT Click Again";
+  //set first button to invisible
+  document.getElementsByClassName("clickable")[1].style.display = 'none';
+}
+
+function hideFirst() {
+   document.getElementsByClassName("clickable")[0].style.display = 'none';
+   document.getElementById("perfectly-normal-div").innerHTML = 'Timeout time for you. <a href="http://www.w3schools.com/js/js_htmldom_events.asp">Reference</a>';
+}
+
+
+
+</script>
+</body>
+</head>

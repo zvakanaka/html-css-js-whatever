@@ -1,1 +1,38 @@
 https://adobe.github.io/Spry/samples/data_region/JSONDataSetSample.html
+
+mysql> create database howtote5_261;
+
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use howtote5_261;
+
+Database changed
+
+
+mysql> CREATE TABLE marbles (marble_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, marble_bag TEXT NOT NULL);
+
+Query OK, 0 rows affected (0.07 sec)
+
+
+mysql> INSERT INTO marbles (marble_bag) VALUES ('STRINGIFIED JSON DATA WILL GO HERE');
+
+Query OK, 1 row affected (0.01 sec)
+
+
+mysql> SELECT * FROM marbles;
++-----------+------------------------------------+
+| marble_id | marble_bag                         |
++-----------+------------------------------------+
+|         1 | STRINGIFIED JSON DATA WILL GO HERE |
++-----------+------------------------------------+
+1 row in set (0.00 sec)
+
+
+mysql> DELETE FROM marbles WHERE marble_id = 1;
+
+Query OK, 1 row affected (0.01 sec)
+
+
+mysql> SELECT * FROM marbles;
+
+Empty set (0.00 sec)

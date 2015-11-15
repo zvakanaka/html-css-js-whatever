@@ -35,12 +35,12 @@ function jasonDom(url, builderMethod) {
 	xmlhttp.send();
 }
 
-jasonDom("/cit-261/html-css-js-whatever/index-info.json", function buildPage(arr) {
+jasonDom("/cit-261/html-css-js-whatever/modules/nav-info.json", function buildPage(arr) {
     //include style sheet
     var link = document.createElement('link');
     link.id = 'nav-css';
     link.rel = 'stylesheet';
-    link.href = arr.baseUrl + '/' + 'styles/hip.css';
+    link.href = arr.baseUrl + '/' + 'style/hip.css';
     document.head.appendChild(link);
 
     //build containing elements for heading and nav

@@ -1,0 +1,14 @@
+{
+	"title": "Portfolio Cit-261 | Adam Quinton",
+	"baseUrl": "/cit-261/html-css-js-whatever",
+	"nav":
+		[
+		    { "name": "JS", "text": "Events and Objects", "url": "js/"},
+			{ "name": "JSON", "text": "Parse, Stringify", "url": "json/"},
+       	    { "name": "Local Storage", "text": "", "url": "local-storage/"},
+		    { "name": "DOM", "text": "DOM Basics", "url": "dom/"},
+		    { "name": "CSS", "text": "Transformations and Transitions", "url": "css/"},
+       	    { "name": "AJAX", "text": "", "url": ""},
+       	    { "name": "Team", "text": "", "url": "team/"}
+		]
+}
