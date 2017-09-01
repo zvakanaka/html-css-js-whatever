@@ -1,6 +1,6 @@
 {
 	"title": "Portfolio Cit-261 | Adam Quinton",
-	"baseUrl": "/cit-261/html-css-js-whatever",
+	"baseUrl": "",
 	"nav":
 		[
 		    { "name": "JS", "text": "Events and Objects", "url": "js/"},
