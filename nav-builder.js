@@ -35,7 +35,7 @@ function jasonDom(url, builderMethod) {
 	xmlhttp.send();
 }
 
-jasonDom("/cit-261/html-css-js-whatever/modules/nav-info.json", function buildPage(arr) {
+jasonDom("/modules/nav-info.json", function buildPage(arr) {
     //include style sheet
     var link = document.createElement('link');
     link.id = 'nav-css';
