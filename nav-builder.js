@@ -1,6 +1,6 @@
 function getPathStart() {//e.g. zvakanaka.github.io/html-css/css-vars/index.html -> /html-css
   var temp = location.pathname.substr(1);
-  return '/'+num.substr(0, num.indexOf('/'));
+  return '/'+temp.substr(0, temp.indexOf('/'));
 }
 var pathStart = getPathStart();
 function makeUL(arr) {
