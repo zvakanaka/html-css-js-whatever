@@ -1,3 +1,8 @@
+function getPathStart() {//e.g. zvakanaka.github.io/html-css/css-vars/index.html -> /html-css
+  var temp = location.pathname.substr(1);
+  return '/'+num.substr(0, num.indexOf('/'));
+}
+var pathStart = getPathStart();
 function makeUL(arr) {
     // create list element
     var list = document.createElement('ul');
@@ -35,7 +40,7 @@ function jasonDom(url, builderMethod) {
 	xmlhttp.send();
 }
 
-jasonDom("./modules/nav-info.json", function buildPage(arr) {
+jasonDom(pathStart+"/modules/nav-info.json", function buildPage(arr) {
     //include style sheet
     var link = document.createElement('link');
     link.id = 'nav-css';
